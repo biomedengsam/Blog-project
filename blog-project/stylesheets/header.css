@@ -1,0 +1,89 @@
+header {
+  grid-area: hd;
+  background-image: url("/blog-project/images/landscape.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #014052;
+}
+
+/* home list */
+.home {
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe {
+  align-self: flex-start;
+}
+
+/* blog main title */
+.blog-title {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  padding: 1em;
+  font-size: larger;
+}
+
+li:hover {
+  background-color: #017a9b;
+}
+
+.home-list {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Centered text on image */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+}
+
+ul {
+  display: inline-block;
+}
+
+@media (max-width: 750px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1900px) {
+  .title-image {
+    width: 100%;
+  }
+}
