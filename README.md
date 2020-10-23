@@ -1,4 +1,3 @@
-# test
 # Landing Page Project
 
 ## Introduction
@@ -11,5 +10,7 @@ A Landing Page project that aims to demonstrate the ability to  manipulate the D
 * Add an active state to sections when a section is in the viewport.
 
 *Note for the reviewer: For the element in viewport function i read [the article at](https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/)
-until the ### Determining if the element is in the viewport ### section. Then wrote my function without
+until the
+ ### Determining if the element is in the viewport ### 
+ section. Then wrote my function without
 viewing the rest of the article until i finished writing my function and making sure it works.*
