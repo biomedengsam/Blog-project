@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
       rel="stylesheet"
     />
@@ -14,7 +18,7 @@
     <div class="container">
       <header>
         <nav class="nav">
-          <div class="home">
+          <section class="home">
             <img
               src="images/logo.png"
               width="60"
@@ -22,19 +26,25 @@
               alt="logo"
               class="logo"
             />
-            <ul class="home-list">
-              <li><a href="/">Home</a></li>
-              <li><a href="#">Travel</a></li>
-              <li><a href="#">Destination</a></li>
-              <li><a href="#">Food</a></li>
-              <li><a href="#">Archives</a></li>
-            </ul>
-          </div>
-          <div class="subscribe">
-            <ul>
-              <li><a href="#">Subscribe</a></li>
-            </ul>
-          </div>
+            <div id="responsive">
+              <ul class="home-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Archives</a></li>
+              </ul>
+
+              <!-- <div class="subscribe">
+                <ul>
+                  <li><a href="#">Subscribe</a></li>
+                </ul>
+              </div> -->
+            </div>
+          </section>
+          <a href="#" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
         <div class="blog-title">
           <img src="images/landscape.jpg" alt="landscape" class="title-image" />
@@ -185,5 +195,28 @@
         <p>Copyright © Travel Tips. All Rights Reserved</p>
       </footer>
     </div>
+    <script>
+      let x = document.getElementById('responsive');
+      console.log(window.innerWidth);
+
+      function windowReSize() {
+        if (window.innerWidth >= 751) {
+          console.log(window.innerWidth);
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+      }
+      window.addEventListener('resize', windowReSize);
+      function myFunction() {
+        console.log(window.innerWidth);
+        // console.trace(x.style.display);
+        if (x.style.display === 'none') {
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+      }
+    </script>
   </body>
 </html>

@@ -1,6 +1,6 @@
-@import url("reset.css");
-@import url("header.css");
-@import url("components.css");
+@import url('reset.css');
+@import url('header.css');
+@import url('components.css');
 
 .container {
   display: grid;
@@ -8,9 +8,9 @@
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 30px;
   grid-template-areas:
-    "hd hd "
-    "blog1 blog"
-    "footer footer";
+    'hd hd '
+    'blog1 blog'
+    'footer footer';
 }
 
 .first-card {
@@ -25,14 +25,14 @@ h3 {
 @media (max-width: 599px) {
   .container {
     display: grid;
-    grid-template-columns: 850px;
+    grid-template-columns: minmax(599px, 599px);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 10px;
     grid-template-areas:
-      "hd"
-      "blog1"
-      "blog"
-      "footer";
+      'hd'
+      'blog1'
+      'blog'
+      'footer';
   }
   .card {
     font-size: 2rem;
@@ -58,9 +58,9 @@ h3 {
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 30px;
     grid-template-areas:
-      "hd hd "
-      "blog1 blog"
-      "footer footer";
+      'hd hd '
+      'blog1 blog'
+      'footer footer';
   }
 }
 
@@ -71,9 +71,9 @@ h3 {
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 0px;
     grid-template-areas:
-      "hd hd "
-      "blog1 blog"
-      "footer footer";
+      'hd hd '
+      'blog1 blog'
+      'footer footer';
   }
   .aside,
   .content {

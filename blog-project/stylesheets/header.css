@@ -1,6 +1,6 @@
 header {
   grid-area: hd;
-  background-image: url("/blog-project/images/landscape.jpg");
+  background-image: url('/blog-project/images/landscape.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,15 +15,21 @@ header {
   background-color: #014052;
 }
 
+#icon {
+  display: none;
+  align-self: baseline;
+  /* justify-content: end; */
+}
+
 /* home list */
 .home {
   display: flex;
   flex-direction: row;
 }
 
-.subscribe {
+/* .subscribe {
   align-self: flex-start;
-}
+} */
 
 /* blog main title */
 .blog-title {
@@ -61,6 +67,15 @@ ul {
 }
 
 @media (max-width: 750px) {
+  #responsive {
+    display: none;
+  }
+
+  #icon {
+    display: block;
+    margin: 1rem;
+  }
+
   .home {
     display: flex;
     flex-direction: column;
@@ -68,11 +83,6 @@ ul {
 
   .logo {
     display: block;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .home-list {
@@ -85,5 +95,8 @@ ul {
 @media (min-width: 1900px) {
   .title-image {
     width: 100%;
+  }
+  .nav {
+    font-size: x-large;
   }
 }
