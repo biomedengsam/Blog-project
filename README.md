@@ -5,7 +5,7 @@ Along with webpage design considerations without the use of any external librari
 For live demonstration https://tarvelingblog.netlify.app/
 
 ### Acknowledgment
-placeholder text taken from :<br>
+Placeholder text taken from :<br>
 - https://www.heleninwonderlust.co.uk/tips-for-climbing-kilimanjaro/
 - https://cupofjo.com/2017/04/flying-with-kids-travel-tips/
 - https://handluggageonly.co.uk/category/food/
